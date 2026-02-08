@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fff);
+  text-align: center;
+  overflow-x: hidden;
+  color: #444;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #e60073;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.message {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.proposal h2 {
+  color: #e60073;
+}
+
+button {
+  padding: 12px 22px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #e60073;
+  color: white;
+}
+
+button:hover {
+  background: #cc005f;
+}
+
+#response {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #e60073;
+}
+
+/* 💗 Floating Hearts */
+#heart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 6s linear forwards;
+  color: #ff4d88;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+.video-section video {
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+#yesBtn, #noBtn {
+  padding: 12px 22px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yesBtn {
+  background: #e60073;
+  color: white;
+}
+
+#noBtn {
+  background: #ff8080;
+  color: white;
+}
+
+#yesBtn:hover {
+  background: #cc005f;
+}
+
+#noBtn:hover {
+  background: #ff4d4d;
+}
